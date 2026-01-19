@@ -1,49 +1,35 @@
-# ===============================
-# Python / Django
-# ===============================
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# ===============================
-# Virtual Environment & Secrets
-# ===============================
+# Virtual environment
 venv/
-.env
-.env.*
+env/
 
-# ===============================
-# Django generated files
-# ===============================
+# Django
 db.sqlite3
 staticfiles/
 media/
 
-# ===============================
-# Data / Datasets 
-# ===============================
-data/
-*.csv
-*.tsv
-*.xlsx
+# Environment variables
+.env
 
-# ===============================
+# Data files
+data/*.csv
+*.sqlite3
+
 # Logs
-# ===============================
 *.log
-logs/
 
-# ===============================
-# OS / Editor
-# ===============================
+# VS Code
+.vscode/
+
+# OS files
 .DS_Store
 Thumbs.db
-.vscode/
-.idea/
 
-# ===============================
-# Node 
-# ===============================
+# Node / frontend
 node_modules/
 dist/
