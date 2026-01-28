@@ -16,10 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import JsonResponse
+
+def home(request):
+    return JsonResponse({"status": "SmartBuyr API running"})
 
 urlpatterns = [
+    path('', home),
     path('admin/', admin.site.urls),
-    path('api/', include('products.urls')),
+    path('api/products/', include('products.urls')),
+    path('api/accounts/', include('accounts.urls')),
+    # Add direct auth endpoints for compatibility
     path('api/', include('accounts.urls')),
 ]
+
 
